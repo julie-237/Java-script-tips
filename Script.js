@@ -5,8 +5,6 @@ alert(greetingText);
 greetingText = "Hi I, am really Julie";
 alert(greetingText);
 
-let YourAge = 32;
-alert(YourAge);
 
 let hobbies = ["sports", "cooking", "reading"];
 alert(hobbies[0]);
@@ -18,7 +16,20 @@ let job = {
 };
 alert(job.title)
 
-let adultyears = YourAge - 18
+let YourAge = 32;
+alert(YourAge);
+
+let adultyears 
+
+function calculateAdultYears() {
+  adultyears = YourAge - 18
+}
+calculateAdultYears()
 alert(adultyears)
+
 YourAge = 45
+calculateAdultYears()
+
+alert(adultyears) 
+
 
