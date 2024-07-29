@@ -21,14 +21,14 @@ alert(YourAge);
 
 let adultyears 
 
-function calculateAdultYears() {
-  return YourAge - 18
+function calculateAdultYears(UserAge) {
+  return UserAge - 18
 }
-adultyears = calculateAdultYears()
+adultyears = calculateAdultYears(YourAge)
 alert(adultyears)
 
 YourAge = 45
-adultyears = calculateAdultYears()
+adultyears = calculateAdultYears(YourAge)
 
 alert(adultyears) 
 
