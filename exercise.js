@@ -1,12 +1,44 @@
-let CourseName = "100days of code";
-alert(CourseName);
+let courseName = "100days of code";
+// alert(courseName);
 
-let CoursePrice = "34.99 US";
-alert(CoursePrice);
+let coursePrice = "34.99 US";
+// alert(coursePrice);
 
 let courseGoals = [
   "Creativity",
   "Personal skills development",
   "Develop problem-solving",
 ];
-alert(courseGoals[1]);
+// alert(courseGoals);
+
+let course = {
+  name: "100 days of code",
+  price: "34.99 US",
+  goals: [
+    "Creativity",
+    "Personal skills development",
+    "Develop problem-solving",
+  ],
+};
+
+// alert(course.name);
+// alert(course.price);
+// alert(course.goals);
+// alert(course.goals[1]);
+
+function showElmentById(array, id) {
+ if (id>=array.length) {
+    alert("The provided identifier doesn't exist");
+ } else {
+    alert(array[id]);
+ }
+ 
+}
+
+courseGoals.push("goal4");
+courseGoals.push("goal5");
+showElmentById(courseGoals, 4);
+
+let courseGoals2 = ["tivity", "skills", "Develop"];
+showElmentById(courseGoals2, 1);
+showElmentById(courseGoals2, 4);
