@@ -20,3 +20,7 @@ console.log("foyet " + " blandine")
 let usersurname = "blandine"
 console.log(usersurname.length)
 console.log(usersurname.toUpperCase())
+
+let hobbies = ["dance", "singing"]
+console.log(hobbies.length)
+
