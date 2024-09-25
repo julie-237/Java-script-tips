@@ -1,23 +1,23 @@
 let greetingText = "Hi I'm Julie";
 
-alert(greetingText);
-alert(greetingText);
+console.log(greetingText);
+console.log(greetingText);
 greetingText = "Hi I, am really Julie";
-alert(greetingText);
+console.log(greetingText);
 
 
 let hobbies = ["sports", "cooking", "reading"];
-alert(hobbies[0]);
+console.log(hobbies[0]);
 
 let job = {        
   title: "mecanic",      
   place: "bonamoussadi",   
   salary: "60000",    
 };                
-alert(job.title)       
+console.log(job.title)       
 
 let YourAge = 32;   
-alert(YourAge);  
+console.log(YourAge);  
 
 let adultyears 
 
@@ -30,18 +30,18 @@ function calculateAdultYears(UserAge) {
 let crush = {
   name: "chéri",
   greet() {
-    alert("Hello!");
+    console.log("Hello!");
   }
 };
 
 
 crush.greet();
 adultyears = calculateAdultYears(YourAge)
-alert(adultyears)
+console.log(adultyears)
 
 YourAge = 45
 adultyears = calculateAdultYears(YourAge)
 
-alert(adultyears) 
+console.log(adultyears) 
 
 
