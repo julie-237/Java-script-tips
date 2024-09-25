@@ -17,3 +17,6 @@ result *= 5
 result /= 5
 
 console.log("foyet " + " blandine")
+let usersurname = "blandine"
+console.log(usersurname.length)
+console.log(usersurname.toUpperCase())
