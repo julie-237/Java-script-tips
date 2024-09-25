@@ -15,3 +15,5 @@ result += 5
 result -= 5
 result *= 5
 result /= 5
+
+console.log("foyet " + " blandine")
