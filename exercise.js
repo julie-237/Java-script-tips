@@ -20,7 +20,7 @@ let course = {
     "Develop problem-solving",
   ],
 };
-
+ 
 // alert(course.name);
 // alert(course.price);
 // alert(course.goals);
@@ -32,13 +32,13 @@ function showElmentById(array, id) {
  } else {
     alert(array[id]);
  }
- 
+ return array
 }
 
 courseGoals.push("goal4");
 courseGoals.push("goal5");
 showElmentById(courseGoals, 4);
 
-let courseGoals2 = ["tivity", "skills", "Develop"];
+let courseGoals2 = ["activity", "skills", "Develop"];
 showElmentById(courseGoals2, 1);
 showElmentById(courseGoals2, 4);
