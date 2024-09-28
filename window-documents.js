@@ -31,16 +31,18 @@ console.log(firstParagraph.innerHTML)
 firstParagraph.innerHTML = "Hi! This is <strong>important!</strong>"
 // Adding event listeners
  let paragraghElement = document.querySelector(".listen")
-function changeParagraphText() {
+function changeParagraphText(event) {
     paragraghElement.textContent = "clicked";
-    console.log(paragraghElement)
+    console.log("paragraph clicked")
+    console.log(event)
 }
 
  paragraghElement.addEventListener("click", changeParagraphText) 
 
  let inputElement = document.querySelector("input")
-function retrieveUserInput() {
-    let enteredText = inputElement.value
+function retrieveUserInput(event) {
+    //let enteredText = inputElement.value
+    let enteredText = event.target.value
     console.log(enteredText);
 }
 
