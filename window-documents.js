@@ -21,3 +21,7 @@ let firstH1Element = document.querySelector("h1");
 firstH1Element.remove();
 //firstH1Element.parentElement.removeChild(firstH1Element);// for older browsers
 
+// Moving existing elements around
+firstParagraph.parentElement.append(firstParagraph)
+// .append adds and puts after the other existing elements 
+// while .insert adds and puts before the other existing elements 
