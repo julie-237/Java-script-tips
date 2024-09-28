@@ -29,3 +29,11 @@ firstParagraph.parentElement.append(firstParagraph)
 // InnerHTML
 console.log(firstParagraph.innerHTML)
 firstParagraph.innerHTML = "Hi! This is <strong>important!</strong>"
+// Adding event listeners
+ let paragraghElement = document.querySelector(".listen")
+function changeParagraphText() {
+    paragraghElement.textContent = "clicked";
+    console.log(paragraghElement)
+}
+
+ paragraghElement.addEventListener("click", changeParagraphText) 
