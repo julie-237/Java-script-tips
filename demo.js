@@ -10,6 +10,13 @@ function updateRemainingCharacters(event) {
   //console.log(remainingcharacters)
   //console.log(remainingCharsElement)
   remainingCharsElement.textContent = remainingcharacters;
+  if (remainingCharsElement.textContent < 10) {
+    remainingCharsElement.style.color = "red"
+  }
+  else {
+    remainingCharsElement.style.color = "black"
+  }
+
   //remainingCharsElement = remainingcharacters;
   //console.log(remainingCharsElement)
 
