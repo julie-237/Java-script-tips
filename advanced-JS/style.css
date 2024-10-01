@@ -1,0 +1,23 @@
+body {
+text-align: center;
+}
+
+header {
+    margin-bottom: 35px;
+    }
+
+div {
+    width: 45rem;
+    background-color: rgb(246, 245, 200);
+    padding: 25px 15px 30px 15px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+button {
+    background-color: rgb(245, 242, 74);
+    padding: 4px 20px;
+    border-radius: 3px;
+    border-color:  rgb(245, 242, 74);
+    
+    }
