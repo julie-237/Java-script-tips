@@ -18,14 +18,30 @@ function outputSecondButton(event) {
 
 function removeParagraphAbove(event) {
     let thirdParagraph = document.getElementById("third-paragraph")
-    thirdParagraph.remove() 
-  
+    if (thirdParagraph.textContent.length > 0)
+        {
+    thirdParagraph.textContent = "" 
+    firstButton.textContent = "show paragraph"}
+    else {
+firstButton.textContent = "Remove paragraph"
+thirdParagraph.textContent = "For example, you can make the below button remove this text!"
+    }
   }
+
   firstButton.addEventListener("click", removeParagraphAbove)
 
-
-  function changeThirdParagraphBackgroundToBlue(event) {
+function changeThirdParagraphBackgroundToBlue(event) {
     let firstParagraph = document.getElementById("first-paragraph")
-    firstParagraph.style.backgroundColor = "blue"
+    if (firstParagraph.style.backgroundColor != "blue") {
+       document.getElementById("second-but").textContent = "Add Blue background Color"
+       firstParagraph.style.backgroundColor = "blue"
+    }
+    else {
+        firstParagraph.style.backgroundColor = "transparent"
+        document.getElementById("second-but").textContent = "Remove Blue background Color"
+    }
+
+    
 }
+
 document.getElementById("second-but").addEventListener("click", changeThirdParagraphBackgroundToBlue)
