@@ -1,0 +1,72 @@
+body {
+  margin: 25rem;
+  background-color: rgb(32, 32, 29);
+}
+h1 {
+  text-align: center;
+  color: rgb(236, 202, 8);
+}
+section {
+  background-color: rgb(245, 238, 205);
+  width: 95%;
+  max-width: 50rem;
+  padding: 3rem;
+  margin: 2.5rem;
+  border-radius: 5px;
+}
+
+button {
+  cursor: pointer;
+  background-color: rgb(236, 202, 8);
+  border-color: rgb(236, 202, 8);
+  border-radius: 5px;
+  margin: 15px 0 15px 0;
+  padding: 12px;
+}
+button:hover {
+  background-color: rgb(211, 184, 33);
+  border: 1px solid rgb(211, 184, 33);
+}
+label {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+label,
+input {
+  display: block;
+}
+input {
+  width: 5.5%;
+  max-width: 100%;
+  height: 30px;
+  font-size: 1.5rem;
+  border: 1px solid rgb(156, 153, 136);
+  color: rgb(66, 63, 44);
+}
+input:focus {
+  background-color: rgb(248, 239, 187);
+}
+a {
+  text-decoration: none;
+  color: rgb(205, 183, 57);
+}
+a {
+  text-decoration: none;
+  color: rgb(236, 145, 8);
+}
+
+a.highlight {
+  background-color: rgb(63, 4, 141);
+  padding: 0.25rem;
+}
+
+#Calculated-sum {
+  padding: 1rem;
+  font-size: 3rem;
+  font-weight: bold;
+  background-color: rgb(233, 191, 55);
+  padding: 0.25rem;
+  text-align: center;
+  border-radius: 4px;
+  display: none;
+}
