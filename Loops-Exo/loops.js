@@ -18,3 +18,35 @@ function calculateSum() {
 
 calculateSumButtonElement.addEventListener("click", calculateSum)
 // 2. Highlight links
+const highlightLinksButtonElement = document.querySelector("#highlight-links button")
+
+function highlightLinks () {
+    const anchorElements = document.querySelectorAll("#highlight-links a")
+
+    for (const anchorElement of anchorElements) {
+        anchorElement.classList.add("highlight")
+    }
+}
+
+
+highlightLinksButtonElement.addEventListener("click", highlightLinks)
+// 3. outputting user information
+const userData = {
+    firstName: "Foyet",
+    lastName: "Blandine",
+    age: 26
+};
+const displayUserButtonElement = document.querySelector("#user-information button")
+
+function displayUserData() {
+const outputDataElement = document.getElementById("output-user-data")
+for (const propertyName in userData){
+    const newUserDataListElement = document.createElement("li")
+    const outputText = propertyName.toUpperCase() + ": " + userData[propertyName] 
+    newUserDataListElement.textContent = outputText;
+    outputDataElement.append(newUserDataListElement);
+}
+
+}
+
+displayUserButtonElement.addEventListener("click", displayUserData)
