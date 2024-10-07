@@ -55,10 +55,11 @@
       </p>
       <div id="target">
         <label for="User-target-number">Your Target Number</label>
-        <input type="number" id="User-target-number" />
+        <input type="number" min="1" max="6" id="User-target-number" />
       </div>
       <button>Roll the Dice</button>
-      <p>It took you <strong>X</strong> rolls to roll a <strong>Y</strong></p>
+      <ul id="dice-rolls"></ul>
+      <p>It took you <span id="output-total-rolls" class="output">X</span> rolls to roll a <span id="output-target-number" class="output">Y</span>.</p>
     </section>
   </body>
 </html>
